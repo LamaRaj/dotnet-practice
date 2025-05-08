@@ -1,0 +1,19 @@
+﻿
+@model MvcDemo.Models.UserInfo
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2> Enter Your Name and age: </h2>
+
+<form method="post">
+    <input type="text" name="Name" /> 
+    <input type="text" name="age" />
+    <input type="submit" />
+</form>
+
+@if(Model !=null)
+{
+    <h3> Welcome, @Model.name! with @Model.age</h3>
+}
